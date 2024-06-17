@@ -1,7 +1,8 @@
 import './css/style.css';
-import './js/app';
-import './scss/style.scss'; 
+import './scss/mixin.scss';
 import './scss/fonts.scss';
+import './scss/style.scss'; 
+import './js/app';
 
 import './scss/main.scss';
 

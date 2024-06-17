@@ -1,6 +1,5 @@
 @import './mixin.scss';
 
-// START Модалка из новой корзины для добавления нового адреса
 
 $bg-main: #f1f1f1;
 // $fontMain: "Raleway";
@@ -12,5 +11,8 @@ $colorMainFont: #262633;
 
 .hello-world{
   &__container-box{
+    font-weight: 900;
+    @include nsm {
+    }
   }
 }
