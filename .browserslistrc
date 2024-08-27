@@ -1,3 +1,4 @@
-last 1 version
-> 1%
-not dead
+# Browsers that we support
+
+defaults and fully supports es6-module
+maintained node versions
