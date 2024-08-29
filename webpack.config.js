@@ -6,6 +6,7 @@ module.exports = {
   mode: 'development',
   devServer: {
     port: 9000,
+    watchFiles: ['src/index.html', 'src/scss/main.scss'],
   },
   devtool: 'source-map',
   output: {

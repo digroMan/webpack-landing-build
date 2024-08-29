@@ -1,3 +1,9 @@
+@mixin nlgxx {
+  @media all and (max-width: 1920px) {
+    @content;
+  }
+}
+
 @mixin nlgx {
   @media all and (max-width: 1699px) {
     @content;
@@ -12,6 +18,12 @@
 
 @mixin nlg {
   @media all and (max-width: 1240px) {
+    @content;
+  }
+}
+
+@mixin mlgs {
+  @media all and (max-width: 1100px) {
     @content;
   }
 }

@@ -3,6 +3,19 @@
 html {
   scroll-behavior: smooth;
   font-weight: 400;
+  font-size: 16px;
+  
+  @include nlg {
+    font-size: 13px;
+  }
+
+  @include nlgs {
+    font-size: 11px;
+  }
+
+  @include nmd {
+    font-size: 9px;
+  }
 }
 
 body {
@@ -109,6 +122,10 @@ figcaption {
   background-position: center;
   background-size: cover;
   background-color: #fff;
+
+  @include nlg{
+    min-height: auto;
+  }
 
   @include nsm {
     min-height: unset;

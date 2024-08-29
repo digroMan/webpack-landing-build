@@ -16,6 +16,12 @@
         {
           "devDependencies": true
         }
-      ]
+      ],
+      "no-underscore-dangle":[
+        "error",
+        {
+          "allowAfterThis": true
+        }
+      ],
     }
   }
