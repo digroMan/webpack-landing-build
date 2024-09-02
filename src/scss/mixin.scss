@@ -22,7 +22,7 @@
   }
 }
 
-@mixin mlgs {
+@mixin nlgs {
   @media all and (max-width: 1100px) {
     @content;
   }
