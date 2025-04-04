@@ -1,10 +1,10 @@
 @import './mixin.scss';
 
-.main-wrapper{
+.main-wrapper {
   background-color: #000;
 }
 
-.chromeperfectpixel-layer-img-container{
+.chromeperfectpixel-layer-img-container {
   overflow: hidden !important;
 }
 
@@ -14,430 +14,431 @@
   padding-bottom: 180px;
 
   @include nsm {
-     padding-top: 6.6vw;
-     padding-bottom: 10vw;
+    padding-top: 6.6vw;
+    padding-bottom: 10vw;
   }
 
-    // .career-in-yamaguchi_back-after
+  // .career-in-yamaguchi_back-after
 
-    &_back-after {
-      &::after {
-          content: "";
-          display: block;
-          background-image: url('https://www.yamaguchi.ru/content/landing/career-in-yamaguchi/career-in-yamaguchi-after.webp');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
+  &_back-after {
+    &::after {
+      content: "";
+      display: block;
+      background-image: url('https://www.yamaguchi.ru/content/landing/career-in-yamaguchi/career-in-yamaguchi-after.webp');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
 
-          width: 1920px;
-          height: 907px;
+      width: 1920px;
+      height: 907px;
 
-          position: absolute;
-          transform: translate(-50%, 0%);
-          bottom: 16%;
-          left: 50%;
-          z-index: 0;
+      position: absolute;
+      transform: translate(-50%, 0%);
+      bottom: 16%;
+      left: 50%;
+      z-index: 0;
 
-          @include nsm {
-            background-image: url('https://www.yamaguchi.ru/content/landing/career-in-yamaguchi/career-in-yamaguchi-after-mob.webp');
-            width: 100vw;
-            height: 114.4vw;
-            transform: translate(-50%, 0%);
-            top: 0%;
-            left: 50%;
-            opacity: 0.8;
-          }
+      @include nsm {
+        background-image: url('https://www.yamaguchi.ru/content/landing/career-in-yamaguchi/career-in-yamaguchi-after-mob.webp');
+        width: 100vw;
+        height: 114.4vw;
+        transform: translate(-50%, 0%);
+        top: 0%;
+        left: 50%;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  // .career-in-yamaguchi__container-box
+
+  &__container-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+
+    @include nsm {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: center;
+    }
+  }
+
+  // .career-in-yamaguchi__above-title
+
+  &__above-title {
+    margin-bottom: 48px;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    @include nsm {
+      font-size: 5vw;
+      margin: auto;
+      margin-bottom: 8.8vw;
+    }
+  }
+
+  // .career-in-yamaguchi__terminology
+
+  &__terminology {
+    margin-bottom: 56px;
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+
+    @include nlg {
+      font-size: 26px;
+    }
+
+    @include nsm {
+      margin-bottom: 9vw;
+      font-size: 4.4vw;
+      letter-spacing: 0vw;
+    }
+  }
+
+  // .career-in-yamaguchi__svg-container
+
+  &__svg-container {
+    width: 100%;
+
+    // .career-in-yamaguchi__svg-container_logotype
+
+    &_logotype {
+      position: relative;
+      margin-bottom: 80px;
+
+      @include nsm {
+        margin-bottom: 8.1vw;
       }
     }
 
-		// .career-in-yamaguchi__container-box
+    // .career-in-yamaguchi__svg-container_after
 
-		&__container-box {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1;
+    &_after {
+      &::after {
+        content: "";
+        display: block;
+        width: 171%;
+        height: 400%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 280%;
+        left: 50%;
+        z-index: -1;
+        background-color: #000;
+        border-radius: 50%;
+        filter: blur(85px);
+      }
+    }
+
+    // .career-in-yamaguchi__svg-container_badge
+
+    &_badge {
+      width: 42px;
+      margin-left: auto;
 
       @include nsm {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: center;
+        order: 2;
+        width: 13vw;
+        margin-left: 0;
       }
-		}
+    }
 
-		// .career-in-yamaguchi__above-title
+    // .career-in-yamaguchi__svg-container_badge-staff
 
-		&__above-title {
+    &_badge-staff {
+      margin-right: 14px;
+      margin-bottom: 15px;
+
+      @include nsm {
+        margin-right: 0vw;
+        margin-bottom: 1vw;
+      }
+    }
+
+    // .career-in-yamaguchi__svg-container_badge-showrooms
+
+    &_badge-showrooms {
+      margin-right: 20px;
+      margin-bottom: -10px;
+
+      @include nsm {
+        margin-right: 0vw;
+        margin-bottom: 1vw;
+      }
+    }
+
+    // .career-in-yamaguchi__svg-container_badge-experience
+
+    &_badge-experience {
+      margin-right: 20px;
       margin-bottom: 48px;
-      font-size: 31px;
-      font-weight: 600;
-      line-height: 1.4;
 
       @include nsm {
-        font-size: 5vw;
-        margin: auto;
-        margin-bottom: 8.8vw;
+        margin-right: 2.4vw;
+        margin-bottom: 1vw;
       }
-		}
+    }
+  }
 
-		// .career-in-yamaguchi__terminology
+  // .career-in-yamaguchi__svg
 
-		&__terminology {
-      margin-bottom: 56px;
-      font-size: 33px;
-      font-weight: 400;
-      letter-spacing: 0.5px;
-      line-height: 1.4;
+  &__svg {
+    width: 100%;
+    height: auto;
+    fill: #fff;
+  }
 
-      @include nlg{
-        font-size: 26px;
+  // .career-in-yamaguchi__content-box
+
+  &__content-box {
+    width: 45%;
+
+    @include nsm {
+      width: 100%;
+    }
+  }
+
+  // .career-in-yamaguchi__title-container
+
+  &__title-container {
+    margin-bottom: 30px;
+
+    @include nsm {
+      margin-bottom: 7.2vw;
+    }
+  }
+
+  // .career-in-yamaguchi__title-item
+
+  &__title-item {
+    margin-bottom: 12px;
+    font-weight: 600;
+    line-height: 1.1;
+
+    @include nsm {
+      margin-bottom: 3.1vw;
+    }
+
+    // .career-in-yamaguchi__title-item_top
+
+    &_top {
+      font-size: 35px;
+
+      @include nlg {
+        font-size: 28px;
       }
 
       @include nsm {
-        margin-bottom: 9vw;
-        font-size: 4.4vw;
+        font-size: 6.6vw;
         letter-spacing: 0vw;
       }
-		}
+    }
 
-		// .career-in-yamaguchi__svg-container
+    // .career-in-yamaguchi__title-item_bottom
 
-		&__svg-container {
+    &_bottom {
+      font-size: 50px;
+      letter-spacing: -0.4px;
+
+      @include nlg {
+        font-size: 37px;
+      }
+
+      @include nsm {
+        font-size: 7.8vw;
+        letter-spacing: 0.2vw;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // .career-in-yamaguchi__text-container
+
+  &__text-container {
+    position: relative;
+
+    @include nsm {
+      margin-bottom: 12.3vw;
+    }
+
+    // .career-in-yamaguchi__text-container_badge
+
+    &_badge {
       width: 100%;
 
-      // .career-in-yamaguchi__svg-container_logotype
-
-			&_logotype {
-        position: relative;
-        margin-bottom: 80px;
-
-        @include nsm {
-          margin-bottom: 8.1vw;
-        }
-			}
-
-      // .career-in-yamaguchi__svg-container_after
-
-      &_after {
-        &::after {
-          content: "";
-          display: block;
-          width: 171%;
-          height: 400%;
-          position: absolute;
-          transform: translate(-50%, -50%);
-          top: 280%;
-          left: 50%;
-          z-index: -1;
-          background-color: #000;
-          border-radius: 50%;
-          filter: blur(85px);
-        }
+      @include nsm {
+        display: contents;
       }
+    }
+  }
 
-			// .career-in-yamaguchi__svg-container_badge
+  // .career-in-yamaguchi__text-item
 
-			&_badge {
-        width: 42px;
-        margin-left: auto;
+  &__text-item {
+    width: 97%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.75;
 
-        @include nsm {
-          order: 2;
-          width: 13vw;
-          margin-left: 0;
-        }
-			}
+    @include nlg {
+      font-size: 15px;
+    }
 
-			// .career-in-yamaguchi__svg-container_badge-staff
+    @include nsm {
+      width: 101%;
+      margin: auto;
+      margin-bottom: 8vw;
+      font-size: 4.4vw;
+      line-height: 1.7;
+    }
 
-			&_badge-staff {
-        margin-right: 14px;
-        margin-bottom: 15px;
+    // .career-in-yamaguchi__text-item_badge
 
-        @include nsm {
-          margin-right: 0vw;
-          margin-bottom: 1vw;
-        }
-			}
+    &_badge {
+      font-weight: 400;
+      line-height: 1.7;
+      color: #000;
 
-			// .career-in-yamaguchi__svg-container_badge-showrooms
-
-			&_badge-showrooms {
-        margin-right: 20px;
-        margin-bottom: -10px;
-
-        @include nsm {
-          margin-right: 0vw;
-          margin-bottom: 1vw;
-        }
-			}
-
-			// .career-in-yamaguchi__svg-container_badge-experience
-
-			&_badge-experience {
-        margin-right: 20px;
-        margin-bottom: 48px;
-
-        @include nsm {
-          margin-right: 2.4vw;
-          margin-bottom: 1vw;
-        }
-			}
-		}
-
-		// .career-in-yamaguchi__svg
-
-		&__svg {
-      width: 100%;
-      height: auto;
-      fill: #fff;
-		}
-
-    // .career-in-yamaguchi__content-box
-
-    &__content-box {
-      width: 45%;
+      @include nlg {
+        font-size: 13px;
+      }
 
       @include nsm {
-        width: 100%;
-      }
-    }  
-
-		// .career-in-yamaguchi__title-container
-
-		&__title-container {
-      margin-bottom: 30px;
-
-      @include nsm {
-        margin-bottom: 7.2vw;
-      }
-		}
-
-		// .career-in-yamaguchi__title-item
-
-		&__title-item {
-      margin-bottom: 12px;
-      font-weight: 600;
-      line-height: 1.1;
-
-      @include nsm {
-        margin-bottom: 3.1vw;
+        order: 3;
+        font-size: 5vw;
+        text-align: start;
       }
 
-			// .career-in-yamaguchi__title-item_top
-
-			&_top {
+      &:first-child {
+        margin-bottom: 12px;
+        font-weight: 600;
         font-size: 35px;
+        line-height: 1;
 
-        @include nlg{
-          font-size: 28px;
+        @include nlg {
+          font-size: 23px;
         }
-
-        @include nsm {
-          font-size: 6.6vw;
-          letter-spacing: 0vw;
-        }
-			}
-
-			// .career-in-yamaguchi__title-item_bottom
-
-			&_bottom {
-        font-size: 50px;
-        letter-spacing: -0.4px;
-
-        @include nlg{
-          font-size: 37px;
-        }
-
-        @include nsm {
-          font-size: 7.8vw;
-          letter-spacing: 0.2vw;
-        }
-			}
-
-      &:last-child{
-        margin-bottom: 0;
-      }
-		}
-
-		// .career-in-yamaguchi__text-container
-
-		&__text-container {
-      position: relative;
-
-      @include nsm {
-        margin-bottom: 12.3vw;
-      }
-
-			// .career-in-yamaguchi__text-container_badge
-
-			&_badge {
-        width: 100%;
-
-        @include nsm {
-          display: contents;
-        }
-			}
-		}
-
-		// .career-in-yamaguchi__text-item
-
-		&__text-item {
-      width: 97%;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.75;
-
-      @include nlg{
-        font-size: 15px;
-      }
-
-      @include nsm {
-        width: 101%;
-        margin: auto;
-        margin-bottom: 8vw;
-        font-size: 4.4vw;
-        line-height: 1.7;
-      }
-
-			// .career-in-yamaguchi__text-item_badge
-
-			&_badge {
-        font-weight: 400;
-        line-height: 1.7;
-        color: #000;
-
-        @include nlg{
-          font-size: 13px;
-        }
-
-        @include nsm {
-          order: 3;
-          font-size: 5vw;
-          text-align: start;
-        }
-
-        &:first-child{
-          margin-bottom: 12px;
-          font-weight: 600;
-          font-size: 35px;
-          line-height: 1;
-
-          @include nlg{
-            font-size: 23px;
-          }
-
-          @include nsm {
-            order: 1;
-            width: fit-content;
-            margin-left: 0;
-            margin-bottom: 3.4vw;
-            font-size: 7.5vw;
-          }
-        }
-			}
-			// .career-in-yamaguchi__text-item_mr-bttm
-
-			&_mr-bttm {
-        &:first-child{
-          margin-bottom: 38px;
-
-          @include nsm {
-            margin-bottom: 3.4vw;
-          }
-        }
-			}
-
-      &:last-child{
-        margin-bottom: 0;
-      }
-		}
-
-		// .career-in-yamaguchi__badge-container
-
-		&__badge-container {
-      width: 49%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 22px;
-      grid-row-gap: 20px;
-
-      @include nsm {
-        display: flex;
-        flex-direction: column;
-        width: 97%;
-        margin: auto;
-        row-gap: 2.5vw;
-      }
-		}
-
-		// .career-in-yamaguchi__badge-item
-
-		&__badge-item {
-      padding: 30px;
-      padding-top: 39px;
-      padding-right: 20px;
-      padding-bottom: 0;
-      background-color: #fff;
-      border-radius: 22px;
-
-      @include nsm {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 9.4vw;
-        padding-right: 10.6vw;
-        border-radius: 6.9vw;
-      }
-
-			// .career-in-yamaguchi__badge-item_staff
-
-			&_staff {
-        grid-area: 1 / 1 / 2 / 2;
-        padding-bottom: 30px;
-
-        @include nsm {
-          order: 2;
-          padding-bottom: 9vw;
-          padding-top: 8vw;
-        }
-			}
-
-			// .career-in-yamaguchi__badge-item_showrooms
-
-			&_showrooms {
-        grid-area: 2 / 1 / 3 / 2;
-        padding-top: 32px;
-        padding-left: 20px;
-        padding-right: 15px;
-
-        @include nsm {
-          order: 3;
-          padding-top: 9.4vw;
-          padding-left: 6vw;
-          padding-right: 10.6vw;
-          padding-bottom: 8vw;
-        }
-			}
-
-      // .career-in-yamaguchi__badge-item_experience
-
-			&_experience {
-        grid-area: 1 / 2 / 3 / 3;
 
         @include nsm {
           order: 1;
-          padding-top: 10vw;
-          padding-inline: 9vw;
-          padding-bottom: 7.2vw;
+          width: fit-content;
+          margin-left: 0;
+          margin-bottom: 3.4vw;
+          font-size: 7.5vw;
         }
-			}
+      }
+    }
 
-		}
+    // .career-in-yamaguchi__text-item_mr-bttm
+
+    &_mr-bttm {
+      &:first-child {
+        margin-bottom: 38px;
+
+        @include nsm {
+          margin-bottom: 3.4vw;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // .career-in-yamaguchi__badge-container
+
+  &__badge-container {
+    width: 49%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 22px;
+    grid-row-gap: 20px;
+
+    @include nsm {
+      display: flex;
+      flex-direction: column;
+      width: 97%;
+      margin: auto;
+      row-gap: 2.5vw;
+    }
+  }
+
+  // .career-in-yamaguchi__badge-item
+
+  &__badge-item {
+    padding: 30px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-bottom: 0;
+    background-color: #fff;
+    border-radius: 22px;
+
+    @include nsm {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 9.4vw;
+      padding-right: 10.6vw;
+      border-radius: 6.9vw;
+    }
+
+    // .career-in-yamaguchi__badge-item_staff
+
+    &_staff {
+      grid-area: 1 / 1 / 2 / 2;
+      padding-bottom: 30px;
+
+      @include nsm {
+        order: 2;
+        padding-bottom: 9vw;
+        padding-top: 8vw;
+      }
+    }
+
+    // .career-in-yamaguchi__badge-item_showrooms
+
+    &_showrooms {
+      grid-area: 2 / 1 / 3 / 2;
+      padding-top: 32px;
+      padding-left: 20px;
+      padding-right: 15px;
+
+      @include nsm {
+        order: 3;
+        padding-top: 9.4vw;
+        padding-left: 6vw;
+        padding-right: 10.6vw;
+        padding-bottom: 8vw;
+      }
+    }
+
+    // .career-in-yamaguchi__badge-item_experience
+
+    &_experience {
+      grid-area: 1 / 2 / 3 / 3;
+
+      @include nsm {
+        order: 1;
+        padding-top: 10vw;
+        padding-inline: 9vw;
+        padding-bottom: 7.2vw;
+      }
+    }
+
+  }
 }
 
 .card-description {
@@ -447,7 +448,7 @@
 
   // .card-description_training
 
-  &_training{
+  &_training {
     @include nsm {
       padding-top: 2.4vw;
     }
@@ -455,7 +456,7 @@
 
   // .card-description_culture
 
-  &_culture{
+  &_culture {
     padding-top: 157px;
     padding-bottom: 50px;
 
@@ -467,7 +468,7 @@
 
   // .card-description_group
 
-  &_group{
+  &_group {
     padding-top: 48px;
     padding-bottom: 190px;
 
@@ -479,13 +480,13 @@
 
   // .card-description_loyalty
 
-  &_loyalty{
+  &_loyalty {
     padding-top: 80px;
     padding-bottom: 190px;
 
     @include nsm {
       padding-top: 19.7vw;
-      padding-bottom: 18.4vw;
+      padding-bottom: 12.4vw;
     }
   }
 
@@ -502,7 +503,7 @@
     }
   }
 
-  &__container-title{
+  &__container-title {
     margin-bottom: 120px;
     text-align: center;
     font-size: 40px;
@@ -526,21 +527,21 @@
 
     // .card-description__img-container_left
 
-    &_left{
+    &_left {
       border-top-right-radius: 50px;
       border-bottom-right-radius: 50px;
     }
 
     // .card-description__img-container_right
 
-    &_right{
+    &_right {
       border-top-left-radius: 50px;
       border-bottom-left-radius: 50px;
     }
 
     // .card-description__img-container_training
 
-    &_training{
+    &_training {
       width: 86%;
       top: 61.5%;
       left: 14.3%;
@@ -557,7 +558,7 @@
 
     // .card-description__img-container_culture
 
-    &_culture{
+    &_culture {
       width: 78%;
       left: auto;
       right: -28.3%;
@@ -593,7 +594,7 @@
 
     // .card-description__img-container_loyalty
 
-    &_loyalty{
+    &_loyalty {
       width: 78%;
       left: auto;
       right: -28.3%;
@@ -619,13 +620,15 @@
 
     // .card-description__img_culture
 
-    &_culture{
-      @include nlgm{
+    &_culture {
+      @include nlgm {
         object-position: -120px 0px;
       }
-      @include nlg{
+
+      @include nlg {
         object-position: -90px 0px;
       }
+
       @include nsm {
         object-position: 0px 0px;
       }
@@ -633,13 +636,15 @@
 
     // .card-description__img_group
 
-    &_group{
-      @include nlgm{
+    &_group {
+      @include nlgm {
         object-position: 120px 0px;
       }
-      @include nlg{
+
+      @include nlg {
         object-position: 90px 0px;
       }
+
       @include nsm {
         object-position: 0px 0px;
       }
@@ -647,13 +652,15 @@
 
     // .card-description__img_loyalty
 
-    &_loyalty{
-      @include nlgm{
+    &_loyalty {
+      @include nlgm {
         object-position: -120px 0px;
       }
-      @include nlg{
+
+      @include nlg {
         object-position: -90px 0px;
       }
+
       @include nsm {
         object-position: 0px 0px;
       }
@@ -671,37 +678,37 @@
 
     // .card-description__description-container_right
 
-    &_right{
+    &_right {
       margin-left: auto;
     }
 
     // .card-description__description-container_left
 
-    &_left{
+    &_left {
       margin-right: auto;
     }
 
     // .card-description__description-container_training
 
-    &_training{
+    &_training {
       width: 37.5%;
     }
 
     // .card-description__description-container_culture
 
-    &_culture{
+    &_culture {
       width: 40%;
     }
 
     // .card-description__description-container_group
 
-    &_group{
+    &_group {
       width: 37%;
     }
 
     // .card-description__description-container_loyalty
 
-    &_loyalty{
+    &_loyalty {
       width: 42%;
     }
   }
@@ -716,7 +723,7 @@
 
     // .card-description__title-container_training
 
-    &_training{
+    &_training {
       margin-bottom: 42px;
 
       @include nsm {
@@ -726,7 +733,7 @@
 
     // .card-description__title-container_culture
 
-    &_culture{
+    &_culture {
       margin-bottom: 22px;
 
       @include nsm {
@@ -736,7 +743,7 @@
 
     // .card-description__title-container_group
 
-    &_group{
+    &_group {
       margin-bottom: 61px;
 
       @include nsm {
@@ -746,7 +753,7 @@
 
     // .card-description__title-container_loyalty
 
-    &_loyalty{
+    &_loyalty {
       margin-bottom: 50px;
 
       @include nsm {
@@ -767,7 +774,7 @@
     &_top {
       font-size: 35px;
 
-      @include nlg{
+      @include nlg {
         font-size: 28px;
       }
 
@@ -783,7 +790,7 @@
       font-size: 50px;
       letter-spacing: -0.4px;
 
-      @include nlg{
+      @include nlg {
         font-size: 37px;
       }
 
@@ -795,10 +802,10 @@
 
     // .card-description__title-item_training
 
-    &_training{
+    &_training {
       font-size: 38px;
 
-      @include nlg{
+      @include nlg {
         font-size: 31px;
       }
 
@@ -810,11 +817,11 @@
 
     // .card-description__title-item_culture
 
-    &_culture{
+    &_culture {
       font-size: 40px;
 
-      @include nlg{
-        font-size: 31px   ;
+      @include nlg {
+        font-size: 31px;
       }
 
       @include nsm {
@@ -825,10 +832,10 @@
 
     // .card-description__title-item_group
 
-    &_group{
+    &_group {
       font-size: 38px;
 
-      @include nlg{
+      @include nlg {
         font-size: 31px;
       }
 
@@ -840,11 +847,11 @@
 
     // .card-description__title-item_loyalty
 
-    &_loyalty{
+    &_loyalty {
       font-size: 40px;
 
-      @include nlg{
-        font-size: 31px   ;
+      @include nlg {
+        font-size: 31px;
       }
 
       @include nsm {
@@ -853,7 +860,7 @@
       }
     }
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -869,7 +876,7 @@
 
     // .card-description__text-container_culture
 
-    &_culture{
+    &_culture {
       @include nsm {
         width: 99%;
         margin: auto;
@@ -880,7 +887,7 @@
 
     // .card-description__text-container_group
 
-    &_group{
+    &_group {
       @include nsm {
         width: 90%;
         margin: auto;
@@ -889,7 +896,7 @@
 
     // .card-description__text-container_loyalty
 
-    &_loyalty{
+    &_loyalty {
       @include nsm {
         width: 99%;
         margin: auto;
@@ -908,7 +915,7 @@
     font-weight: 400;
     line-height: 1.7;
 
-    @include nlg{
+    @include nlg {
       font-size: 16px;
     }
 
@@ -922,7 +929,7 @@
 
     // .card-description__text-item_culture
 
-    &_culture{
+    &_culture {
       width: 100%;
 
       @include nsm {
@@ -932,7 +939,7 @@
 
     // .card-description__text-item_group
 
-    &_group{
+    &_group {
       width: 100%;
       line-height: 1.75;
       letter-spacing: 0.5px;
@@ -944,7 +951,7 @@
 
     // .card-description__text-item_loyalty
 
-    &_loyalty{
+    &_loyalty {
       width: 100%;
       letter-spacing: 0.6px;
       line-height: 1.75;
@@ -954,7 +961,7 @@
       }
     }
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -971,279 +978,677 @@
   background-image: url("https://www.yamaguchi.ru/content/landing/career-in-yamaguchi/part-team-desk-bg.webp");
 
   @include nsm {
-    padding-block: 15.3vw;
+    padding-top: 15.5vw;
+    padding-bottom: 11.5vw;
   }
 
-    &::before{
-      content: '';
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-      background-color:rgba(0, 0, 0, .5);
-      z-index: 0;
-    }
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 0;
+  }
 
-		// .part-team__container-box
+  // .part-team__container-box
 
-		&__container-box {
-      text-align: center;
-      position: relative;
-		}
+  &__container-box {
+    text-align: center;
+    position: relative;
+  }
 
-		// .part-team__title
+  // .part-team__title
 
-		&__title {
-      margin-bottom: 55px;
-      font-size: 53px;
-      line-height: 1.5;
-      font-weight: 600;
+  &__title {
+    margin-bottom: 55px;
+    font-size: 53px;
+    line-height: 1.5;
+    font-weight: 600;
 
-      @include nsm {
-        font-size: 7.5vw;
-        margin-bottom: 9.1vw;
-      }
-		}
-
-		// .part-team__text-item
-
-		&__text-item {
-      width: 77%;
+    @include nsm {
+      width: 96%;
       margin: auto;
-      font-size: 25px;
-      line-height: 1.7;
-      font-weight: 400;
-
-      @include nsm {
-        width: 96%;
-        font-size: 5vw;
-      }
+      margin-bottom: 8.5vw;
+      font-size: 7.5vw;
+      line-height: 1.2;
     }
+  }
+
+  // .part-team__text-item
+
+  &__text-item {
+    width: 77%;
+    margin: auto;
+    font-size: 25px;
+    line-height: 1.7;
+    font-weight: 400;
+
+    @include nsm {
+      width: 96%;
+      font-size: 5vw;
+    }
+  }
 }
 
 .reasons {
   position: relative;
   padding-top: 125px;
+  padding-bottom: 100px;
 
-    // .reasons_back-after
+  @include nsm {
+    padding-top: 27.8vw;
+    padding-bottom: 15.9vw;
+  }
 
-    &_back-after {
-      &::after {
-          content: "";
-          display: block;
-          background-image: url('https://www.yamaguchi.ru/content/landing/career-in-yamaguchi/career-in-yamaguchi-after.webp');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
+  // .reasons_back-after
 
-          width: 1920px;
-          height: 907px;
+  &_back-after {
+    &::after {
+      content: "";
+      display: block;
+      background-image: url('https://www.yamaguchi.ru/content/landing/career-in-yamaguchi/career-in-yamaguchi-after.webp');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
 
-          position: absolute;
-          transform: translate(-50%, 0%) scale(-1, 1);
-          bottom: 16%;
-          left: 50%;
-          z-index: 0;
+      width: 1920px;
+      height: 907px;
 
-          @include nsm {
-            background-image: url('https://www.yamaguchi.ru/content/landing/career-in-yamaguchi/career-in-yamaguchi-after-mob.webp');
-            width: 100vw;
-            height: 114.4vw;
-            transform: translate(-50%, 0%);
-            top: 0%;
-            left: 50%;
-            opacity: 0.8;
-          }
+      position: absolute;
+      transform: translate(-50%, 0%) scale(-1, 1);
+      bottom: -3%;
+      left: 50%;
+      z-index: 0;
+
+      @include nsm {
+        display: none;
+      }
+    }
+  }
+
+  // .reasons__container-box
+
+  &__container-box {
+    position: relative;
+    z-index: 1;
+  }
+
+  // .reasons__title
+
+  &__title {
+    margin-bottom: 73px;
+    font-size: 41px;
+    text-align: center;
+
+    @include nsm {
+      font-size: 7.5vw;
+      margin-bottom: 7.5vw;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+  }
+
+  // .reasons__badge-container
+
+  &__badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+
+    @include nsm {
+      width: 97%;
+      margin: auto;
+      flex-direction: column;
+      gap: 0;
+      row-gap: 6.5vw;
+    }
+  }
+
+  // .reasons__badge-flex
+
+  &__badge-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include nsm {
+      display: contents;
+    }
+
+
+    // .reasons__badge-flex_size-l
+
+    &_size-l {
+      width: 41%;
+      row-gap: 17px;
+    }
+
+    // .reasons__badge-flex_size-m
+
+    &_size-m {
+      width: 34%;
+    }
+  }
+
+  // .reasons__badge-item
+
+  &__badge-item {
+    display: flex;
+    background-color: #2D2D2D;
+    border-radius: 27px;
+    justify-content: start;
+    align-items: center;
+
+    @include nsm {
+      background: none;
+      border: none;
+      align-items: flex-start;
+    }
+
+
+    // .reasons__badge-item_location
+
+    &_location {
+      width: 21.5%;
+      padding-top: 10px;
+      flex-direction: column;
+      row-gap: 37px;
+
+      @include nsm {
+        order: 3;
+        width: 100%;
+        padding: 0;
+        column-gap: 3.8vw;
+        flex-direction: row;
       }
     }
 
-    // .reasons__container-box
+    // .reasons__badge-item_salary
 
-    &__container-box {
-      position: relative;
-      z-index: 1;
+    &_salary {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-left: 31px;
+      column-gap: 20px;
+
+      @include nlg {
+        padding-left: 10px;
+      }
+
+      @include nsm {
+        order: 2;
+        padding: 0;
+        column-gap: 3.8vw;
+      }
     }
 
-    // .reasons__title
+    // .reasons__badge-item_career
 
-    &__title {
-      margin-bottom: 73px;
-      font-size: 41px;
+    &_career {
+      padding-top: 10px;
+      padding-bottom: 5px;
+      padding-left: 21px;
+      column-gap: 5px;
+
+      @include nlg {
+        padding-left: 10px;
+      }
+
+      @include nsm {
+        order: 6;
+        padding: 0;
+        column-gap: 3.8vw;
+      }
+    }
+
+    // .reasons__badge-item_chart
+
+    &_chart {
+      padding-top: 12px;
+      padding-bottom: 5px;
+      padding-left: 8px;
+      column-gap: 0px;
+
+      @include nlg {
+        padding-left: 0px;
+      }
+
+      @include nsm {
+        order: 1;
+        padding: 0;
+        column-gap: 3.8vw;
+      }
+    }
+
+    // .reasons__badge-item_training
+
+    &_training {
+      padding-top: 12px;
+      padding-bottom: 5px;
+      padding-left: 8px;
+      column-gap: 0px;
+
+      @include nlg {
+        padding-left: 0px;
+      }
+
+      @include nsm {
+        order: 4;
+        padding: 0;
+        column-gap: 3.8vw;
+      }
+    }
+
+    // .reasons__badge-item_products
+
+    &_products {
+      padding-top: 17px;
+      padding-bottom: 12px;
+      padding-left: 20px;
+      column-gap: 56px;
+      border-radius: 35px;
+
+      @include nsm {
+        order: 5;
+        padding: 0;
+        column-gap: 3.8vw;
+      }
+    }
+
+  }
+
+  // .reasons__svg-container
+
+  &__svg-container {
+
+    @include nsm {
+      width: 7.5vw;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    // .reasons__svg-container_location
+
+    &_location {}
+
+    // .reasons__svg-container_salary
+
+    &_salary {}
+
+    // .reasons__svg-container_career
+
+    &_career {}
+
+    // .reasons__svg-container_chart
+
+    &_chart {}
+
+    // .reasons__svg-container_training
+
+    &_training {}
+
+    // .reasons__svg-container_products
+
+    &_products {}
+  }
+
+  // .reasons__svg
+
+  &__svg {
+    @include nsm {
+      width: 100%;
+      height: auto;
+    }
+
+    // .reasons__svg_desk
+
+    &_desk {
+      display: block;
+
+      @include nsm {
+        display: none;
+      }
+    }
+
+    // .reasons__svg_mob
+
+    &_mob {
+      display: none;
+
+      @include nsm {
+        display: block;
+      }
+    }
+  }
+
+  // .reasons__text-container
+
+  &__text-container {
+
+    // .reasons__text-container_location
+
+    &_location {}
+
+    // .reasons__text-container_salary
+
+    &_salary {}
+
+    // .reasons__text-container_career
+
+    &_career {}
+
+    // .reasons__text-container_chart
+
+    &_chart {}
+
+    // .reasons__text-container_training
+
+    &_training {}
+
+    // .reasons__text-container_products
+
+    &_products {}
+  }
+
+  // .reasons__text-item
+
+  &__text-item {
+    font-size: 33px;
+
+    @include nlg {
+      font-size: 24px;
+    }
+
+    @include nsm {
+      font-size: 5vw;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    // .reasons__text-item_location
+
+    &_location {
+      width: 84%;
+      margin: auto;
       text-align: center;
+
+      @include nlg {
+        width: 75%;
+      }
+
+      @include nsm {
+        width: 100%;
+        text-align: start;
+      }
     }
 
-    // .reasons__badge-container
+    // .reasons__text-item_salary
 
-    &__badge-container {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      gap: 17px;
+    &_salary {}
+
+    // .reasons__text-item_career
+
+    &_career {
+      letter-spacing: -0.7px;
+
+      @include nsm {
+        letter-spacing: 0.1vw;
+        line-height: 1.7;
+      }
     }
 
-    // .reasons__badge-item
+    // .reasons__text-item_chart
 
-    &__badge-item {
-      display: flex;
-      background-color: #2D2D2D;
-      border-radius: 27px;
-      justify-content: start;
+    &_chart {}
+
+    // .reasons__text-item_training
+
+    &_training {}
+
+    // .reasons__text-item_products
+
+    &_products {
+      font-size: 50px;
+      line-height: 1.3;
+
+      @include nlg {
+        font-size: 35px;
+      }
+
+      @include nsm {
+        font-size: 5vw;
+        line-height: 1.7;
+      }
+    }
+  }
+}
+
+.stages {
+  min-height: auto;
+  padding-top: 30px;
+  padding-bottom: 226px;
+
+  @include nsm {
+    padding-top: 0.5vw;
+    padding-bottom: 1.6vw;
+
+  }
+
+  // .stages__container-box
+
+  &__container-box {}
+
+  // .stages__title
+
+  &__title {
+    margin-bottom: 73px;
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: -1.2px;
+
+    @include nsm {
+      letter-spacing: 0.1vw;
+      font-size: 7.5vw;
+      margin-bottom: 7.5vw;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+  }
+
+  // .stages__steps
+
+  &__steps {
+    width: 64%;
+    margin: auto;
+    margin-bottom: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include nsm {
+      width: 42.2vw;
+
+      flex-direction: column;
+      margin-bottom: 10.6vw;
       align-items: center;
 
+      row-gap: 25vw;
 
-      // .reasons__badge-item_location
+      position: relative;
+      left: -2.5vw;
+    }
+  }
 
-      &_location {
-        grid-area: 1 / 1 / 3 / 2;
-        flex-direction: column;
-      }
+  // .stages__svg-container
 
-      // .reasons__badge-item_salary
+  &__svg-container {
+    max-width: 182px;
+    width: auto;
+    margin-top: 10px;
+    position: relative;
 
-      &_salary {
-        grid-area: 1 / 2 / 2 / 5;
-      }
+    @include nsm {
+      max-width: none;
+      width: 100%;
+      margin-top: 0;
+    }
 
-      // .reasons__badge-item_career
+    &:first-child::after {
+      content: "";
+      display: block;
+      background-image: url('https://www.yamaguchi.ru/content/landing/career-in-yamaguchi/arrow.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
 
-      &_career {
-        grid-area: 2 / 2 / 3 / 5;
-      }
+      width: 40px;
+      height: 40px;
 
-      // .reasons__badge-item_chart
+      position: absolute;
+      transform: translate(-50%, 0%);
+      top: 45%;
+      left: 230%;
+      z-index: 0;
 
-      &_chart {
-        grid-area: 1 / 5 / 2 / 7; 
-      }
-
-      // .reasons__badge-item_training
-
-      &_training {
-        grid-area: 2 / 5 / 3 / 7;
-      }
-
-      // .reasons__badge-item_products
-
-      &_products {
-        grid-area: 3 / 1 / 4 / 7; 
+      @include nsm {
+        width: 7.5vw;
+        height: 7.5vw;
+        top: 170%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
       }
     }
 
-    // .reasons__svg-container
+    &:last-child::after {
+      content: "";
+      display: block;
+      background-image: url('https://www.yamaguchi.ru/content/landing/career-in-yamaguchi/arrow.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
 
-    &__svg-container {
+      width: 40px;
+      height: 40px;
 
-      // .reasons__svg-container_location
+      position: absolute;
+      transform: translate(-50%, 0%);
+      top: -67%;
+      left: -32%;
+      z-index: 0;
 
-      &_location {
-      }
-
-      // .reasons__svg-container_salary
-
-      &_salary {
-      }
-
-      // .reasons__svg-container_career
-
-      &_career {
-      }
-
-      // .reasons__svg-container_chart
-
-      &_chart {
-      }
-
-      // .reasons__svg-container_training
-
-      &_training {
-      }
-
-      // .reasons__svg-container_products
-
-      &_products {
+      @include nsm {
+        width: 7.5vw;
+        height: 7.5vw;
+        top: -60%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
       }
     }
 
-    // .reasons__svg
+    // .stages__svg-container_response
 
-    &__svg {
-    }
+    &_response {}
 
-    // .reasons__text-container
+    // .stages__svg-container_telephone
 
-    &__text-container {
+    &_telephone {
+      position: relative;
+      left: 25px;
 
-      // .reasons__text-container_location
-
-      &_location {
-      }
-
-      // .reasons__text-container_salary
-
-      &_salary {
-      }
-
-      // .reasons__text-container_career
-
-      &_career {
-      }
-
-      // .reasons__text-container_chart
-
-      &_chart {
-      }
-
-      // .reasons__text-container_training
-
-      &_training {
-      }
-
-      // .reasons__text-container_products
-
-      &_products {
+      @include nsm {
+        left: auto;
       }
     }
 
-    // .reasons__text-item
+    // .stages__svg-container_interview
 
-    &__text-item {
-      font-size: 33px;
+    &_interview {}
+  }
 
-      // .reasons__text-item_location
+  // .stages__svg
 
-      &_location {
-        text-align: center;
-      }
+  &__svg {
+    display: block;
+    width: 50px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 16px;
 
-      // .reasons__text-item_salary
-
-      &_salary {
-      }
-
-      // .reasons__text-item_career
-
-      &_career {
-      }
-
-      // .reasons__text-item_chart
-
-      &_chart {
-      }
-
-      // .reasons__text-item_training
-
-      &_training {
-      }
-
-      // .reasons__text-item_products
-
-      &_products {
-      }
+    @include nsm {
+      width: 7.5vw;
+      margin-bottom: 3.8vw;
     }
-}  
+  }
 
+  // .stages__svg-signature
 
+  &__svg-signature {
+    font-size: 22px;
+    line-height: 1.45;
+    font-weight: 400;
+    text-align: center;
 
+    @include nlg {
+      font-size: 18px;
+    }
+
+    @include nsm {
+      font-size: 5vw;
+    }
+  }
+
+  // .stages__buttons-container
+
+  &__buttons-container {
+    display: flex;
+    justify-content: space-between;
+
+    @include nsm {
+      flex-direction: column-reverse;
+      row-gap: 3.1vw;
+    }
+  }
+
+  // .stages__button
+
+  &__button {
+    width: 28%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: #1E1E1E;
+    transition: transform linear 0.5s;
+
+    @include nlg {
+      font-size: 19px;
+    }
+
+    @include nsm {
+      width: 100%;
+      height: 23.1vw;
+      font-size: 6.9vw;
+      border-radius: 4.7vw;
+    }
+
+    &:hover {
+      transform: scale(1.025);
+    }
+
+    // .stages__button_red
+
+    &_red {
+      background-color: #E03638;
+    }
+  }
+}
